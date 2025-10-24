@@ -4,7 +4,7 @@ from io import BytesIO
 
 class LotteryModel:
     GAME_CONFIG = {
-        'Lotofácil': {'total': 25, 'pick': 15, 'bola_cols': [f'Bola{i}' for i in range(1, 16)]},
+        'Lotofacil': {'total': 25, 'pick': 15, 'bola_cols': [f'Bola{i}' for i in range(1, 16)]},
         'Quina': {'total': 80, 'pick': 5, 'bola_cols': [f'Bola{i}' for i in range(1, 6)]},
         'Mega-Sena': {'total': 60, 'pick': 6, 'bola_cols': [f'Bola{i}' for i in range(1, 7)]},
         'Lotomania': {'total': 100, 'pick': 50, 'bola_cols': [f'Bola{i}' for i in range(1, 51)]},
