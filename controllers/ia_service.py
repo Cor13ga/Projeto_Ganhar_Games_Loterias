@@ -9,7 +9,6 @@ API_URL = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-fl
 
 
 def _extract_text_from_response(resp_json: dict) -> Optional[str]:
-    """Tenta extrair campo de texto das estruturas comuns retornadas pela API."""
     # Try common structured fields
     for key in ('candidates', 'output', 'responses'):
         block = resp_json.get(key)
