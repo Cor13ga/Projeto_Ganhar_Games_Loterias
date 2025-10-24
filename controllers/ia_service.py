@@ -26,7 +26,6 @@ def _extract_text_from_response(resp_json: dict) -> Optional[str]:
                 if 'text' in first and isinstance(first['text'], str):
                     return first['text']
 
-    # fallback: se json tiver 'text' em qualquer lugar
     def find_text(d):
         if isinstance(d, dict):
             for k, v in d.items():
